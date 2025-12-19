@@ -515,7 +515,7 @@
     <header>
         <div class="container header-inner" role="banner">
             <div style="display:flex;align-items:center;gap:18px;">
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu"><em class="fas fa-bars"></em></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
                 <a class="brand" href="#">
                     <span>Nexus<span class="accent">Shop</span></span>
                 </a>
@@ -523,27 +523,27 @@
 
             <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
                 <ul>
-                    <li><a href="#"><em class="fas fa-home"></em> Home</a></li>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                     <li class="has-dropdown" aria-haspopup="true">
-                        <a href="#" id="catMenuBtn"><em class="fas fa-th-large"></em> Categories <em class="fas fa-chevron-down" style="font-size:12px;"></em></a>
+                        <a href="#" id="catMenuBtn"><i class="fas fa-th-large"></i> Categories <i class="fas fa-chevron-down" style="font-size:12px;"></i></a>
                     </li>
-                    <li><a href="#"><em class="fas fa-fire"></em> Trending</a></li>
-                    <li><a href="#deals"><em class="fas fa-tag"></em> Deals</a></li>
-                    <li><a href="#about"><em class="fas fa-info-circle"></em> About</a></li>
+                    <li><a href="#"><i class="fas fa-fire"></i> Trending</a></li>
+                    <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
                 </ul>
             </nav>
 
             <div style="display:flex;align-items:center;gap:14px;">
                 <div class="search" role="search" aria-label="Product search">
                     <emnput type="search" id="searchInput" placeholder="Search products, categories..." aria-label="Search products" />
-                    <button class="icon-btn" id="searchBtn" aria-label="Search"><em class="fas fa-search"></em></button>
+                    <button class="icon-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
                 </div>
 
                 <div class="header-actions" role="group" aria-label="Header actions">
-                    <a class="icon-btn" title="Account" href="#"><em class="far fa-user"></em></a>
-                    <a class="icon-btn" title="Wishlist" href="#"><em class="far fa-heart"></em></a>
+                    <a class="icon-btn" title="Account" href="#"><i class="far fa-user"></i></a>
+                    <a class="icon-btn" title="Wishlist" href="#"><i class="far fa-heart"></i></a>
                     <a class="cart" href="#" id="cartBtn" title="View cart" aria-label="Cart">
-                        <em class="fas fa-shopping-cart"></em>
+                        <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count" id="cartCount">0</span>
                     </a>
                 </div>
@@ -573,7 +573,7 @@
                 <h1>Winter Collection — Version2</h1>
                 <p>Discover the latest trends in fashion, technology and accessories — curated just for you. Enjoy limited-time deals and free shipping on selected items.</p>
                 <div>
-                    <button class="btn btn-primary" id="shopNow">Shop Now <em class="fas fa-arrow-right"></em></button>
+                    <button class="btn btn-primary" id="shopNow">Shop Now <i class="fas fa-arrow-right"></i></button>
                     <button class="btn btn-ghost" id="exploreDeals">Explore Deals</button>
                 </div>
             </div>
@@ -698,9 +698,9 @@
                 <div style="font-weight:700;font-size:18px">NexusShop</div>
                 <p class="muted" style="margin-top:8px">A modern e-commerce demo built with HTML, CSS & JavaScript.</p>
                 <div style="margin-top:14px;display:flex;gap:10px">
-                    <a class="icon-btn" href="#" title="Facebook"><em class="fab fa-facebook"></em></a>
-                    <a class="icon-btn" href="#" title="Twitter"><em class="fab fa-twitter"></em></a>
-                    <a class="icon-btn" href="#" title="Instagram"><em class="fab fa-instagram"></em></a>
+                    <a class="icon-btn" href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a class="icon-btn" href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a class="icon-btn" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -846,7 +846,7 @@
                 const el = document.createElement('div');
                 el.className = 'cat-card';
                 el.innerHTML = `
-                    <div class="icon"><em class="fas ${cat.icon}"></em></div>
+                    <div class="icon"><i class="fas ${cat.icon}"></i></div>
                     <h4>${cat.name}</h4>
                     <div class="muted" style="font-size:13px;margin-top:6px">Explore ${cat.name}</div>
                 `;
@@ -882,8 +882,8 @@
                         </div>
                     </div>
                     <div class="product-footer">
-                        <button class="add-btn" data-id="${p.id}"><em class="fas fa-cart-plus"></em> Add</button>
-                        <button class="wish-btn" aria-label="Add to wishlist"><em class="far fa-heart"></em></button>
+                        <button class="add-btn" data-id="${p.id}"><i class="fas fa-cart-plus"></i> Add</button>
+                        <button class="wish-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
                     </div>
                 `;
                 productsGrid.appendChild(el);
